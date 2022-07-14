@@ -1,0 +1,149 @@
+body{
+    
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gantari', sans-serif;
+}
+.img-responsive{
+    height: 40%;
+}
+nav{
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+.aaa{
+    margin-top:30px;
+}
+.nav-item
+{
+  position: relative;
+}
+button.navbar-toggler
+{
+  color: darkred;
+}
+h3{
+    color: darkgoldenrod;
+}
+.collapse  .navbar-nav li:after{
+    content: "";
+    position: absolute;
+    background-color:#5e4df6;
+    height: 5px;
+    bottom: 0%;
+    width: 0%;
+    top:105%;
+    left: 00px;
+    transition: 0.5s;
+}
+.collapse  .navbar-nav li:hover:after
+{
+    width: 80px;
+}
+li{
+    margin-left: 10px;
+    margin-right: 10px;
+    
+}
+.unav:after
+{
+  content: "";
+  position: absolute;
+  background-color: peachpuff;
+  width: 0;
+  height: 5px;
+  bottom: 0%;
+  transition: 0.5s;
+}
+/* #003F4D primary color */
+.navbar-nav .nav-link{
+    color: #10E3F0;
+}
+.navbar .navbar-text{
+    color: #10E3F0;
+}
+div.col-md-4{
+    margin-top: 50px;
+   background-color: white;
+}
+.img-responsive:hover{
+    width:200px ;
+}
+h3{
+    color: darkgoldenrod;
+}
+div.col-6{
+    height: 400px;
+    margin-top: 10px;
+}
+input{
+    width: 600px;
+    border-radius: 5px;
+    padding-left: 10px;
+    
+    border: none;
+    height: 40px;
+}
+option{
+    margin-right: 50px;
+    
+}
+button.book{
+    width: 300px;
+    height: 40px;
+    border-radius: 5px;
+    border: none;
+    background-color: #008895;
+    text-align: center;
+}
+form{
+    margin-left: -22px;
+    border-radius: 5px;
+    margin-top: 25px;
+    margin-bottom: 20px;
+}
+
+.name{
+    margin-top:20px ;
+    margin-bottom: 20px;
+}
+.email{
+   
+}
+.date{
+    margin-bottom: 30px;
+}
+p{
+    text-align: justify;
+}
+.col-3{
+    width: 22%;
+    height: 300px;
+    max-height: 700px;
+    background-color: #10E3F0;
+
+}
+i.fa-brands{
+    width: 50px;
+    height: 50px;
+    font-size: 50px;
+    margin-right: 40px;
+}
+.container-fluid.mySlides1.row.col-4 li:after{
+    width: 100px;
+  height: 100px;
+  
+  transition: 0.5s;
+}
+.container-fluid.mySlides1.row.col-4:hover:after
+{
+    width: 300px;
+}
+img.clip:hover{
+    width: 150px;
+}
+

@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gantari:ital,wght@0,500;0,600;1,500;1,600&display=swap"
+        rel="stylesheet">
+
+    <!-- font awsome icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Gantari:ital,wght@0,500;0,600;1,500;1,600&family=Gulzar&family=Poppins&display=swap"
+        rel="stylesheet">
+    <style>
+        body {
+            background-color:white;
+            color: black;
+            
+        }
+
+        h1,
+        h2,
+        h3,
+        h4 {
+            font-family: 'Gantari', sans-serif;
+            font-family: 'Gulzar', serif;
+        }
+
+        .navbar {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1;
+        }
+
+        .collapse .navbar-nav li:after {
+            content: "";
+            position: absolute;
+            background-color: lightgreen;
+            height: 5px;
+            bottom: 0%;
+            width: 0%;
+            top: 105%;
+            left: 00px;
+            transition: 0.5s;
+        }
+
+        .collapse .navbar-nav li:hover:after {
+            width: 80px;
+        }
+
+        li {
+            margin-left: 10px;
+            margin-right: 10px;
+
+        }
+
+        .unav:after {
+            content: "";
+            position: absolute;
+            background-color: peachpuff;
+            width: 0;
+            height: 5px;
+            bottom: 0%;
+            transition: 0.5s;
+        }
+
+        /* #003F4D primary color */
+        .navbar-nav .nav-link {}
+
+        .navbar .navbar-text {
+            color: white;
+        }
+
+        .navbar {
+            position: fixed;
+            top: 0;
+            width: 100%;
+        }
+
+        h2 {
+            color: black;
+        }
+
+        h3 {
+            color: darkgoldenrod;
+        }
+
+        p {
+
+            font-family: 'Poppins', sans-serif;
+            color: rgba(0, 0, 0, 0.637);
+
+        }
+
+        .collapse .navbar-nav li:after {
+            content: "";
+            position: absolute;
+            background-color: #5e4df6;
+            height: 5px;
+            bottom: 0%;
+            width: 0%;
+            top: 105%;
+            left: 0px;
+            transition: 0.5s;
+        }
+
+        .collapse .navbar-nav li:hover:after {
+            width: 80px;
+        }
+
+        .nav-item {
+            position: relative;
+        }
+
+        li {
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+
+
+       
+        
+
+        div.row {
+            position: relative;
+            animation-name: travel;
+            animation-duration: 5s;
+            ;
+        }
+
+        @keyframes travel {
+            0% {
+                left: -200px;top: 0px;
+            }
+
+            100% {
+                left: 0px; top: 0px;
+            }
+
+            
+        }
+        div.bbb {
+            position: relative;
+            animation-name: travelbbb;
+            animation-duration: 5s;
+            ;
+        }
+
+        @keyframes travelbbb {
+            0% {
+                right: -400px;top: 0px;
+            }
+
+            100% {
+                right: 0px; top: 0px;
+            }
+        }    
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg shadow p-4 mb-5 bg-white rounded" style="background-color: white;">
+        <div class="container-fluid ">
+            <a class="navbar-brand ms-5" href="#" style="color:black; font-weight:900 ; letter-spacing: 2px;">
+                <!-- <i class="fa-solid fa-earth-asia"></i> -->
+                <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor"
+                    class="bi bi-brightness-alt-high-fill" viewBox="0 0 16 16">
+                    <path
+                        d="M8 3a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 3zm8 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zm-13.5.5a.5.5 0 0 0 0-1h-2a.5.5 0 0 0 0 1h2zm11.157-6.157a.5.5 0 0 1 0 .707l-1.414 1.414a.5.5 0 1 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm-9.9 2.121a.5.5 0 0 0 .707-.707L3.05 5.343a.5.5 0 1 0-.707.707l1.414 1.414zM8 7a4 4 0 0 0-4 4 .5.5 0 0 0 .5.5h7a.5.5 0 0 0 .5-.5 4 4 0 0 0-4-4z" />
+                </svg>
+                TRAVElNDIA
+            </a>
+            <button class="navbar-toggler navbar-toggler-right" style="background-color:#5e4df6;" type="button"
+                data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon text-dark"><i class="fa-solid fa-bars"
+                        style="font-size:x-large; padding-top:3px;color:peachpuff;"></i></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarText">
+                <ul class="navbar-nav mx-auto mb-2 mb-lg-0 text-secondary">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="index.html" style="color: black;">Home</a>
+                    </li>
+                    <li class="nav-item active w-100">
+                        <a class="nav-link rounded " href="info.html" style="color: black; font-weight:600;">Info</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="resort.html" style="color:black;">Resort</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" style="color:black;">Package</a>
+                    </li>
+                </ul><button class="rounded " style="background-color: #5e4df6; border:none;height:40px">
+                    <span class="navbar-text me-5 ms-5 mt-5 mb-5 w-100  " style="border:none">
+                        Book
+                    </span>
+                </button>
+            </div>
+        </div>
+    </nav>
+    <div class="container mt-2 mb-2">
+        <p>
+            &nbsp;
+        </p>
+    </div>
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-md-6 col-12">
+                <img class="img-responsive mt-5"
+                    src="https://www.jetsetter.com/wp-content/uploads/sites/7/2018/04/y7lEy9T7-1380x1035.jpeg"
+                    style="width:100% ; height:500px;">
+            </div>
+            <div class="col-md-6 bbb col-12 " style="margin-top: 60px;">
+                <h2>Things To Know Before<br> Travelling In India </h2><br>
+                <p>Taj Mahal, also spelled Tadj Mahall, mausoleum complex in Agra, western Uttar Pradesh state, northern
+                    India. The Taj Mahal was built by the Mughal emperor Shah Jahān (reigned 1628–58) to immortalize his
+                    wife Mumtaz Mahal (“Chosen One of the Palace”), who died in childbirth in 1631, having been the
+                    emperor’s inseparable companion since their marriage in 1612.<br><br> India’s most famous and widely
+                    recognized building, it is situated in the eastern part of the city on the southern (right) bank of
+                    the Yamuna (Jumna) River.
+                    Agra Fort (Red Fort), also on the right bank of the Yamuna, is about 1 mile (1.6 km) west of the Taj
+                    Mahal.<br><br>In its harmonious proportions and its fluid incorporation of decorative elements, the
+                    Taj Mahal is distinguished as the finest example of Mughal architecture, a blend of Indian, Persian,
+                    and Islamic styles. Other attractions include twin mosque buildings (placed symmetrically on either
+                    side of the mausoleum), lovely gardens, and a museum.</p>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <h2 style="text-align:center; margin-top:50px ;">Place For Just Relax And Chill</h2>
+
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-md-4 col-12">
+                <h3 style="text-align:center ;">Gateway Of India</h3>
+                <p style="text-align:justify ;">The Gateway of India is an arch-monument built in the early 20th century
+                    in the city of Mumbai, India. It was erected to commemorate the landing of King-Emperor George V,
+                    the first British monarch to visit India,
+                    in December 1911 at Ramchandani Road near Shyamaprasad Mukherjee Chowk. it is very famous in whole
+                    world.</p>
+                <img class="img-responsive w-100" src="https://wallpaperaccess.com/full/4455652.jpg"
+                    style="height:260px ;">
+            </div>
+            <div class="col-md-4 col-12">
+                <h3 style="text-align:center ;">Goa Beaches</h3>
+                <p style="text-align:justify ;">The Goa that we hear about – sizzling nightlife, hippie markets, and the
+                    glitz & glamor – is, in fact, North Goa. The more explored and frequently-visited coastline of Goa
+                    is the stretch to the North of Fort Aguada up to the borders of Maharashtra.
+                    And hence, the best beaches of Goa are all located in North Goa.</p>
+                <img class="img-responsive w-100 " src="https://wallpapercave.com/wp/wp4190328.jpg"
+                    style="height:260px ;">
+            </div>
+
+            <div class="col-md-4 col-12">
+                <h3 style="text-align:center ;">Rann Of Kutch</h3>
+                <p style="text-align:justify ;">The Rann of Kutch (mispelled as Kuchchh) is a large area of salt marshes
+                    that span the border between India and Pakistan. It is located mostly in Gujarat (primarily the
+                    Kutch district ), India, and in some parts of Sindh, Pakistan. It is divided into the Great Rann and
+                    Little Rann .</p>
+                <br>
+                <img class="img-responsive w-100 "
+                    src="https://www.globaljourneys.in/wp-content/uploads/2020/09/bhuj-1.jpg" style="height:260px ;">
+            </div>
+
+
+        </div>
+    </div>
+
+
+
+
+
+    <div class="container mt-5">
+        <h2 class="text-center mb-3">Place For Nature Lovers</h2><br>
+        <div class="row">
+            <div class="col-md-4 col-12">
+                <h3 style="text-align:center ;">Kerala</h3>
+                <p style="text-align:justify ;">Kerala (also known as bitter melon) is an annual crop found in India and
+                    it is cultivated in the summer season mostly from April to July. It is a herbaceous plant belonging
+                    to the Cucurbitaceae family which grows up to six meters.
+                    The fruit is an important part of the plant which has different shapes like a spindle, ovoid and
+                    ellipsoid.</p>
+                <img class="img-responsive w-100 h-70" src="https://wallpapercave.com/wp/wp2783386.jpg">
+            </div>
+            <div class="col-md-4 col-12">
+                <h3 style="text-align:center ;">Valley Of Flowers</h3>
+                <p style="text-align:justify ;">Valley of Flowers National Park is an Indian national park which was
+                    established in 1982. It is located in Chamoli in the state of Uttarakhand and is known for its
+                    meadows of endemic alpine flowers and the variety of flora.
+                    Birds found in the park include Himalayan monal pheasant and other high altitude birds</p>
+                <img class="img-responsive w-100 h-70"
+                    src="http://3.bp.blogspot.com/-pK8A632nexI/VbqOeA4h4VI/AAAAAAAAPCk/C1P5FabXk-U/s1600/valley-of-flowers-wallpapers-full-hd.jpg">
+            </div>
+
+            <div class="col-md-4 col-12">
+                <h3 style="text-align:center ;">Kashmir Valley</h3>
+                <p style="text-align:justify ;">The Kashmir Valley (Urdu: وادی کشمیر) or Vale of Kashmir is a valley
+                    between the Karakoram and the Pir Panjal Range. It was formed by the draining of the huge Karena
+                    lake during a period of tectonic uplift. The Mughal Emperor Jahangir (1569–1627) called the Kashmir
+                    Valley a "paradise on earth".Kashmir vally is really adomic place.</p>
+                <img class="img-responsive w-100 h-70"
+                    src="https://i.pinimg.com/originals/4f/58/ca/4f58ca1f059479743ff5e360bcc8191b.jpg"
+                    style="height: 257px;">
+            </div>
+
+        </div>
+    </div>
+
+    <h2 style="text-align:center; margin-top: 50px; ">Places For Adventurous Ones</h2>
+
+
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-md-4 col-12">
+                <h3 style="text-align:center ;">Jaisalmer</h3>
+                <p style="text-align:justify ;">Jaisalmer pronunciation (help·info), nicknamed "The Golden city", is a
+                    city in the Indian state of Rajasthan, located 575 kilometres (357 mi) west of the state capital
+                    Jaipur. The town stands on a ridge of yellowish sandstone and is crowned by the ancient Jaisalmer
+                    Fort. This fort contains a royal palace and several ornate Jain temples.</p>
+                <img class="img-responsive w-100 h-70"
+                    src="https://www.teahub.io/photos/full/271-2710181_fort-of-jaisalmer-rajasthan-india-jaisalmer-fort.jpg">
+            </div>
+            <div class="col-md-4 col-12">
+                <h3 style="text-align:center ;">Manali</h3>
+                <p style="text-align:justify ;">One of the robust adventures in Manali is trekking. On to the snowy
+                    mountains of the Himalayas or interspersed rocky terrains,
+                    treks are a thrilling getaway for those seeking solidarity and seclusion. Not only this, but many
+                    groups of friends or those looking for cultural exposure often resort to this adventurous activity
+                    in Manali.</p>
+                <img class="img-responsive w-100 h-80"
+                    src="https://www.picnicwale.com/assets/adventure/skiing-in-manali-banner.jpg"
+                    style="height: 233px;">
+            </div>
+
+            <div class="col-md-4 col-12">
+                <h3 style="text-align:center ;">Jaipur</h3>
+                <p style="text-align:justify ;">One of the most adventurous things to do in Jaipur is to discover the
+                    exotic wildlife while embarking on a unique wildlife safari in Jaipur. Drive deep into the safari
+                    park, spot Leopards, striped Hyenas,
+                    Desert Foxes, Golden Jackals, Chitals, and many more species of animals.</p><br>
+                <img class="img-responsive w-100 h-70"
+                    src="https://static.toiimg.com/thumb/msid-48774245,width-550,height-433/48774245.jpg"
+                    style="height: 233px;">
+            </div>
+
+        </div>
+    </div>
+
+
+    </div>
+    <div class="container-fluid mt-5 " style="color: white">
+        <div class="row mt-5" style="background-color:rgb(28, 26, 26)">
+            <div class="col-md-3 col-12 p-lg-3  h-100 ">
+                <div class="d-flex flex-column" style="color: white;">
+                    <h3 style="margin-top:20px ;">Travelndia</h3>
+                    <p style="margin-top: 10px; color: white;">Far far away. behind the word mountains, far from the
+                        countries vokalia and consonantia, there live the blind texts.</p><br>
+                    <div>
+                        <i class="fa-brands fa-twitter"
+                            style="width: 30px; height: 30px; font-size: 30px; margin-right: 40px;"></i>
+                        <i class="fa-brands fa-facebook"
+                            style="width: 50px; height: 50px; font-size: 30px; margin-right: 40px;"></i>
+                        <i class="fa-brands fa-instagram"
+                            style="width: 50px; height: 50px; font-size: 30px; margin-right: 40px;"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-12 p-lg-3">
+                <h3 style="margin-top: 20px;">Information</h3>
+                <p style="color: white; margin-top:10px ;">About</p>
+                <p style="color: white;">Service</p>
+                <p style="color: white;">Terms and Condition</p>
+                <p style="color: white;">Privacy Policy</p>
+            </div>
+            <div class="col-md-3 col-12 p-lg-3">
+                <h3 style="margin-top: 20px;">Customor Support</h3>
+                <p style="color: white;">FAQ</p>
+                <p style="color: white;">Payment Option</p>
+                <p style="color: white;">Booking Tips</p>
+                <p style="color: white;">Contact Us</p>
+            </div>
+            <div class="col-md-3 col-12 p-lg-3">
+                <h3 style="margin-top: 20px;">Have A Questions?</h3>
+                <p style="margin-top:10px ; color: white;"><i class="fa-solid fa-location-dot"
+                        style="text-decoration:none ;"></i> Fake St.Mountain<br>View,Ahmedabad</p>
+                <p style="color:white ;"><i class="fa-solid fa-phone"></i>(+2920348932)</p>
+                <p style="color: white;"><i class="fa-solid fa-envelope"></i>contactme@gmail.com</p>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+
+
+
+</body>
+
+</html>
