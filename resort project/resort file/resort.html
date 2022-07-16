@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travelndia</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gantari:ital,wght@0,500;0,600;1,500;1,600&display=swap"
+        rel="stylesheet">
+
+    <!-- font awsome icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <style>
+        body {
+            background-color: white;
+        }
+
+        div.row {
+            position: relative;
+            animation-name: travel;
+            animation-duration: 5s;
+            ;
+        }
+
+        @keyframes travel {
+            0% {
+                left: -200px;
+            }
+
+            100% {
+                left: 0px;
+            }
+
+        }
+
+        .navbar {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1;
+        }
+
+        .collapse .navbar-nav li:after {
+            content: "";
+            position: absolute;
+            background-color: #5e4df6;
+            height: 5px;
+            bottom: 0%;
+            width: 0%;
+            top: 105%;
+            left: 00px;
+            transition: 0.5s;
+        }
+
+        .collapse .navbar-nav li:hover:after {
+            width: 80px;
+        }
+
+        li {
+            margin-left: 10px;
+            margin-right: 10px;
+
+        }
+
+        .nav-item {
+            position: relative;
+        }
+
+        .checked {
+            color: orange;
+        }
+        .abc{
+            width: 100%;
+            background-color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg shadow p-4 mb-5 bg-white rounded" style="background-color:black ; ">
+        <div class="container-fluid ">
+            <a class="navbar-brand ms-5" href="#" style="color:black; font-weight:900 ; letter-spacing: 2px;">
+                <!-- <i class="fa-solid fa-earth-asia"></i> -->
+                <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor"
+                    class="bi bi-brightness-alt-high-fill" viewBox="0 0 16 16">
+                    <path
+                        d="M8 3a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 3zm8 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zm-13.5.5a.5.5 0 0 0 0-1h-2a.5.5 0 0 0 0 1h2zm11.157-6.157a.5.5 0 0 1 0 .707l-1.414 1.414a.5.5 0 1 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm-9.9 2.121a.5.5 0 0 0 .707-.707L3.05 5.343a.5.5 0 1 0-.707.707l1.414 1.414zM8 7a4 4 0 0 0-4 4 .5.5 0 0 0 .5.5h7a.5.5 0 0 0 .5-.5 4 4 0 0 0-4-4z" />
+                </svg>
+                TRAVElNDIA
+            </a>
+            <button class="navbar-toggler navbar-toggler-right" style="background-color:#5e4df6;" type="button"
+                data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon text-dark"><i class="fa-solid fa-bars"
+                        style="font-size:x-large; padding-top:3px;color:peachpuff;"></i></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarText">
+                <ul class="navbar-nav mx-auto mb-2 mb-lg-0 text-secondary">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="index.html" style="color: black;">Home</a>
+                    </li>
+                    <li class="nav-item active w-100">
+                        <a class="nav-link rounded " href="info.html" style="color: black; ">Info</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="resort.html" style="color:black;font-weight:700;">Resort</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" style="color:black;">Package</a>
+                    </li>
+                </ul><button class="rounded " style="background-color: #5e4df6; border:none;height:40px">
+                    <span class="navbar-text me-5 ms-5 mt-5 mb-5 w-100  " style="border:none">
+                        Book
+                    </span>
+                </button>
+            </div>
+        </div>
+    </nav>
+    <div class="container-fluid abc ">
+        <img class="img-fluid  w-100"
+            src="https://www.greavesindia.com/wp-content/uploads/2016/11/Greaves_Taj_Rambagh_Palace.jpg"
+            style="height: 500px;">
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 col-12">
+                <img class="img-fluid mt-5 w-100"
+                    src="https://www.weddingsbyneerajkamra.com/wedding-venue/pushkar/ananta-resort/images/slide1.jpg"
+                    style="height: 40%;">
+                <h5>Garden Of Dreams,Pushkar By Barasinha Luxury</h5>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                <p class="mt-1"> 238 Rating</p>
+                <p class="text-muted mb-5" style="text-decoration:line-through ;"><i
+                        class="fa-solid fa-indian-rupee-sign"></i>10799.00 Per Room</p>
+                <p class="" style="margin-top:-40px ;"><i class="fa-solid fa-indian-rupee-sign"></i>7500.00 Per
+                    Room<button class="ms-4 w-50  bg-danger"
+                        style=" border-radius:5px;color: white;height:35px ;">Book</button></p>
+
+            </div>
+            <div class="col-md-4 col-12">
+                <img class="img-fluid mt-5 w-100"
+                    src="https://ihpl.b-cdn.net/pictures/hotel/hotelgalleryn/the-tamara-resort-coorg-59412.jpg"
+                    style="height: 40%;">
+                <h5>Tamara Resort,Coorg|Luxury Staycation Deal,Coorg</h5>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                <p class="mt-1"> 144 Rating</p>
+                <p class="text-muted mb-5" style="text-decoration:line-through ;"><i
+                        class="fa-solid fa-indian-rupee-sign"></i>25000.00 Per Room</p>
+                <p class="" style="margin-top:-40px ;"><i class="fa-solid fa-indian-rupee-sign"></i>18499.00 Per
+                    Room<button class="ms-4 w-50  bg-danger"
+                        style=" border-radius:5px;color: white; height:35px ;">Book</button></p>
+
+            </div>
+            <div class="col-md-4 col-12">
+                <img class="img-fluid mt-5 w-100"
+                    src="https://ihpl.b-cdn.net/pictures/hotel/hotelgalleryn/the-tamara-resort-coorg-59412.jpg"
+                    style="height: 40%;">
+                <h5>Mountain Shadow Resort,Wayanad|Luxury Staycation Dealgt</h5>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                <p class="mt-1">56 Rating</p>
+                <p class="text-muted mb-5" style="text-decoration:line-through ;"><i
+                        class="fa-solid fa-indian-rupee-sign"></i>23250.00 Per Room</p>
+                <p class="" style="margin-top:-40px ;"><i class="fa-solid fa-indian-rupee-sign"></i>14699.00 Per
+                    Room<button class="ms-4 w-50 bg-danger"
+                        style=" border-radius:5px;color: white; height:35px ;">Book</button></p>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 col-12">
+                <img class="img-fluid mt-5 w-100"
+                    src="https://res.cloudinary.com/simplotel/image/upload/x_1,y_95,w_1822,h_1025,r_0,c_crop,q_60,fl_progressive/w_1500,c_fit,f_auto/aloha-on-the-ganges-rishikesh/Patio_alfresco_dining_2_pempwy"
+                    style="height: 40%;">
+                <h5>Aloha On The Ganges,Rishikesh | Luxury Staycation Deal</h5>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                <p class="mt-1"> Rat146ing</p>
+                <p class="text-muted mb-5" style="text-decoration:line-through ;"><i
+                        class="fa-solid fa-indian-rupee-sign"></i>18800.00 Per Room</p>
+                <p class="" style="margin-top:-40px ;"><i class="fa-solid fa-indian-rupee-sign"></i>16500.00 Per
+                    Room<button class="ms-4 w-50  bg-danger"
+                        style=" border-radius:5px;color: white;height:35px ;">Book</button></p>
+
+            </div>
+            <div class="col-md-4 col-12">
+                <img class="img-fluid mt-5 w-100"
+                    src="https://www.ibnii.com/wp-content/uploads/2018/08/best-things-to-do-in-coorg.jpg"
+                    style="height: 40%;">
+                <h5>The Ibnii,coorg | Luxury Staycation Deal,Coorg</h5>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                <p class="mt-1"> 146 Rating</p>
+                <p class="text-muted mb-5" style="text-decoration:line-through ;"><i
+                        class="fa-solid fa-indian-rupee-sign"></i>20000.00 Per Room</p>
+                <p class="" style="margin-top:-40px ;"><i class="fa-solid fa-indian-rupee-sign"></i>14099.00 Per
+                    Room<button class="ms-4 w-50  bg-danger"
+                        style=" border-radius:5px;color: white; height:35px ;">Book</button></p>
+
+            </div>
+            <div class="col-md-4 col-12">
+                <img class="img-fluid mt-5 w-100" src="https://wallpapershome.com/images/pages/pic_hs/4606.jpg"
+                    style="height: 40%;">
+                <h5>Della Resort,Lonavala | Luxury Staycation Deal</h5>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                <p class="mt-1">132 Rating</p>
+                <p class="text-muted mb-5" style="text-decoration:line-through ;"><i
+                        class="fa-solid fa-indian-rupee-sign"></i>15000.00 Per Room</p>
+                <p class="" style="margin-top:-40px ;"><i class="fa-solid fa-indian-rupee-sign"></i>111499.00 Per
+                    Room<button class="ms-4 w-50 bg-danger"
+                        style=" border-radius:5px;color: white; height:35px ;">Book</button></p>
+
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container">
+        <h1 style="margin-bottom:30px ;">Our handpicked offers</h1>
+        <div class="row">
+            <div class="col-md-8 col-12">
+                <div class="mySlides">
+                    <img src="munnar1.JPG" class="img-fluid">
+
+                </div>
+
+                <div class="w3-display-container mySlides">
+                    <img src="https://media.dertouristik.com/exports/KuoniUK/ImageGalleryLightboxLarge/480031_ImageGalleryLightboxLarge.jpg"
+                        class="img-fluid">
+
+                </div>
+
+                <div class="w3-display-container mySlides">
+                    <img src="munnar2.jpg" class="img-fluid">
+
+
+                </div>
+
+                <div class="w3-display-container mySlides">
+                    <img src="munnar3.jpg" class="img-fluid">
+                </div>
+
+
+                <script>
+                    var slideIndex = 0;
+                    carousel();
+
+                    function carousel() {
+                        var i;
+                        var x = document.getElementsByClassName("mySlides");
+                        for (i = 0; i < x.length; i++) {
+                            x[i].style.display = "none";
+                        }
+                        slideIndex++;
+                        if (slideIndex > x.length) { slideIndex = 1 }
+                        x[slideIndex - 1].style.display = "block";
+                        setTimeout(carousel, 3000);
+                    }
+                </script>
+                <div class="row mt-1">
+                    <div class="col-md-3 col-12">
+                        <img src="munnar1.jpg" class="img-fluid">
+                    </div>
+                    <div class="col-md-3 col-12">
+                        <img src="https://media.dertouristik.com/exports/KuoniUK/ImageGalleryLightboxLarge/480031_ImageGalleryLightboxLarge.jpg"
+                            class="img-fluid">
+                    </div>
+                    <div class="col-md-3 col-12">
+                        <img src="munnar2.jpg" class="img-fluid">
+                    </div>
+                    <div class="col-md-3 col-12">
+                        <img src="munnar3.jpg" class="img-fluid">
+                    </div>
+                </div>
+                <!--slides end-->
+            </div>
+            <div class="col-md-4 col-12">
+                <h6><i class="fa-solid fa-location-dot"></i>Munnar,India</h6><br>
+                <h5>Windermere Estate Munnar</h5><br>
+                <p style="font-size:19px ;">Tranquil Munnar Plantation Estate Stay<br> with Daily Breakfast,
+                    One Dinner & <br>Guided Plantation Trek
+                </p>
+                <br>
+                <h6>Your Handpicked Inclusions:</h6>
+                <ul>
+                    <li>Daily breakfast at The Barn</li>
+                    <li>One three-courdde set-menu dinner at the Barn<br> per stay.</li>
+                    <li>Daily tea and traditional snacks per person,per<br> at Chai Kada</li>
+                    <li>One guided plantation walk per person,per stay</li>
+                    <li>Complimentary Wi-Fi</li>
+                    <li>Inclussions valid for up to two adults</li>
+                </ul>
+                <div style="text-align: right;">
+                    <p style="text-align: right; ">3 ,4, 5 or 6 Nights from</p>
+                    <h3 style="margin-top:-10px ;"><i class="fa-solid fa-indian-rupee-sign"></i>29,999</h3>
+                    <p style="margin-top: 5px;">Includes Taxes & fees</p>
+                    <h6>Valued up to <i class="fa-solid fa-indian-rupee-sign"></i>44,604(-33%)</h6>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-md-8 col-12">
+
+                <img src="https://hummingbird.travel/wp-content/uploads/2019/11/5K8K6016_ret-Version-6.jpg"
+                    class="img-fluid">
+
+                <div class="row mt-1">
+                    <div class="col-md-3 col-12">
+                        <img src="goa1.jpg" class="img-fluid w-100" style="height:130px">
+                    </div>
+                    <div class="col-md-3 col-12">
+                        <img src="goa2.jpg" class="img-fluid w-100" style="height:130px">
+                    </div>
+                    <div class="col-md-3 col-12">
+                        <img src="goa3.jpg" class="img-fluid">
+                    </div>
+                    <div class="col-md-3 col-12">
+                        <img src="goa4.jpg" class="img-fluid">
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-md-4 col-12">
+                <h6><i class="fa-solid fa-location-dot"></i>Goa,India</h6><br>
+                <h5> The Postcard Hideway Netravali</h5><br>
+                <p style="font-size:19px ;">Brand-New South Goa Treetop Escape<br>with Daily Anytime Breakfast & Daily
+                    <br>Drinks
+                </p>
+                <br>
+                <h6>Your Handpicked Inclusions:</h6>
+                <ul>
+                    <li>Welcome drink on arrival</li>
+                    <li>Daily breakfast at The Barn</li>
+                    <li>One signature Goan or Konkan meal experirnce</li>
+                    <li>Signature welcome drink on arrival</li>
+                    <li>Daily glass of beer per adult</li>
+                    <li>Complimentary Wi-Fi</li>
+                </ul>
+                <div style="text-align: right;">
+                    <p style="text-align: right; ">3 ,4, 5 or 6 Nights from</p>
+                    <h3 style="margin-top:-10px ;"><i class="fa-solid fa-indian-rupee-sign"></i>37,999</h3>
+                    <p style="margin-top: 5px;">Includes Taxes & fees</p>
+                    <h6>Valued up to <i class="fa-solid fa-indian-rupee-sign"></i>69,440(-45%)</h6>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-md-8 col-12">
+
+                <img src="rrrr.jpg" class="img-fluid ">
+
+                <div class="row mt-1">
+                    <div class="col-md-3 col-12">
+                        <img src="r1.jpg" class="img-fluid">
+                    </div>
+                    <div class="col-md-3 col-12">
+                        <img src="r2.webp" class="img-fluid">
+                    </div>
+                    <div class="col-md-3 col-12">
+                        <img src="rt.jpg" class="img-fluid w-100" style="height: 113px;">
+                    </div>
+                    <div class="col-md-3 col-12">
+                        <img src="goa4.jpg" class="img-fluid w-100" style="height:113px ;">
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-md-4 col-12">
+                <h6><i class="fa-solid fa-location-dot"></i>Nahargarh,India</h6><br>
+                <h5> Nahargarh Ranthambore</h5><br>
+                <p style="font-size:19px ;">Royal Ranthmbore National Park Escape<br>with Daily All-Inclusive Dining
+                </p>
+                <br>
+                <h6>Your Handpicked Inclusions:</h6>
+                <ul>
+                    <li>Welcome drink on arrival</li>
+                    <li>Daily all-inclusive dining with breakfast,lunch and dinner</li>
+                    <li>Daily morning tea with cookies in the courtyard</li>
+                    <li>One Complimentary bottle of wine per package</li>
+                    <li>A wildlife documentary screening,every alternate day</li>
+                    <li>INR1,000 spa credit per package(see Fine Print)</li>
+                    <li>Complimentary Wi-Fi</li>
+                </ul>
+                <div style="text-align: right;">
+                    <p style="text-align: right; ">3 ,4, 5 or 6 Nights from</p>
+                    <h3 style="margin-top:-10px ;"><i class="fa-solid fa-indian-rupee-sign"></i>21,999</h3>
+                    <p style="margin-top: 5px;">Includes Taxes & fees</p>
+                    <h6>Valued up to <i class="fa-solid fa-indian-rupee-sign"></i>36,310(-35%)</h6>
+                </div>
+            </div>
+
+        </div>
+    </div>
+        <div class="container-fluid mt-5 w-100" style="color: white">
+            <div class="row mt-5" style="background-color:rgb(28, 26, 26)">
+                <div class="col-md-3 col-12 p-lg-3  h-100 ">
+                    <div class="d-flex flex-column" style="color: white;">
+                        <h3 style="margin-top:20px ;">Travelndia</h3>
+                        <p style="margin-top: 10px; color: white;">Far far away. behind the word mountains, far from the
+                            countries vokalia and consonantia, there live the blind texts.</p><br>
+                        <div>
+                            <i class="fa-brands fa-twitter"
+                                style="width: 30px; height: 30px; font-size: 30px; margin-right: 40px;"></i>
+                            <i class="fa-brands fa-facebook"
+                                style="width: 50px; height: 50px; font-size: 30px; margin-right: 40px;"></i>
+                            <i class="fa-brands fa-instagram"
+                                style="width: 50px; height: 50px; font-size: 30px; margin-right: 40px;"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-12 p-lg-3">
+                    <h3 style="margin-top: 20px;">Information</h3>
+                    <p style="color: white; margin-top:10px ;">About</p>
+                    <p style="color: white;">Service</p>
+                    <p style="color: white;">Terms and Condition</p>
+                    <p style="color: white;">Privacy Policy</p>
+                </div>
+                <div class="col-md-3 col-12 p-lg-3">
+                    <h3 style="margin-top: 20px;">Customor Support</h3>
+                    <p style="color: white;">FAQ</p>
+                    <p style="color: white;">Payment Option</p>
+                    <p style="color: white;">Booking Tips</p>
+                    <p style="color: white;">Contact Us</p>
+                </div>
+                <div class="col-md-3 col-12 p-lg-3">
+                    <h3 style="margin-top: 20px;">Have A Questions?</h3>
+                    <p style="margin-top:10px ; color: white;"><i class="fa-solid fa-location-dot"
+                            style="text-decoration:none ;"></i> Fake St.Mountain<br>View,Ahmedabad</p>
+                    <p style="color:white ;"><i class="fa-solid fa-phone"></i>(+2920348932)</p>
+                    <p style="color: white;"><i class="fa-solid fa-envelope"></i>contactme@gmail.com</p>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+            crossorigin="anonymous"></script>
+
+        <!-- Option 2: Separate Popper and Bootstrap JS -->
+
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+            integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+            crossorigin="anonymous"></script>
+
+</body>
+
+</html>
